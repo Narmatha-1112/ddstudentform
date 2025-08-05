@@ -8,7 +8,7 @@ async function searchStudent() {
   }
 
   try {
-    const res = await fetch(`http://localhost:3000/api/student/${studentId}`);
+    const res = await fetch(`https://ddstudentform.onrender.com/api/student/${studentId}`);
     if (!res.ok) {
       const err = await res.json();
       resultDiv.innerHTML = `<p style="color:red;">${err.error || 'Student not found'}</p>`;

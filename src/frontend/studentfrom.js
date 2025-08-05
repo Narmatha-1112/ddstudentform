@@ -15,7 +15,7 @@ document.getElementById('studentformdata').addEventListener('submit', async func
   localStorage.setItem('currentStudentId', data.studentId);
 
   try {
-    const response = await fetch('http://localhost:3000/api/student/creates', {
+    const response = await fetch('https://ddstudentform.onrender.com/api/student/creates', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
